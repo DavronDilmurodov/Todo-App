@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="bg-slate-600">
+    <div class="xl:container mx-auto p-3 text-center">
+      <h1 class="text-7xl mb-10">Todo App</h1>
+      <form class="form">
+        <input
+          class="input__main px-2 py-3 w-[500px] max-sm:max-w-[100%] rounded-lg placeholder:text-xl placeholder:text-gray-600 mb-2"
+          placeholder="What needs to be done?"
+          required
+          type="text"
+          autofocus
+        />
+      </form>
+      <ul class="list bg-white max-w-[500px] mx-auto rounded-lg mb-3"></ul>
+      <b class="text-2xl">Count: <i class="count"></i></b>
+    </div>
+    <template class="template">
+      <li
+        class="pt-2 pb-1 px-2 flex justify-between border-b-2 rounded-lg items-baseline max-sm:w-full"
+      >
+        <label class="b-contain">
+          <input type="checkbox" />
+          <span class="span"></span>
+          <div class="b-input"></div>
+        </label>
+        <div>
+          <button
+            class="btn__edit font-medium bg-green-700 text-white px-3 py-2 rounded-md mr-2"
+          >
+            Edit
+          </button>
+          <button
+            class="btn__delete font-medium bg-red-600 text-white px-3 py-2 rounded-md"
+          >
+            Delete
+          </button>
+        </div>
+      </li>
+    </template>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
