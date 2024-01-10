@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.container {
+    max-width: 750px;
+    width: 100%;
+    margin: 50px auto 0;
+    padding: 0 20px;
+    @media screen and (max-width: 425px) {
+        padding: 0 10px;
+    }
+}
+
+.ant-list-item {
+    padding-inline: 12px !important;
+    @media screen and (max-width: 425px) {
+        padding-inline: 8px !important;
+    }
+}
+
+.ant-list-item-action {
+    margin-inline-start: 10px !important;
+}
+
+.ant-list-item-action > li {
+    padding: 0 2px !important;
+}
+
+.ant-list-item-action > li button span {
+    font-size: 16px;
+}
+
+.ant-checkbox-wrapper {
+    margin-right: 10px;
+}
+
+.completed {
+    background-color: #146c43;
+}
+.completed:hover {
+    background-color: #115c39 !important;
+}
+.all {
+    background-color: #585f63;
+}
+.all:hover {
+    background-color: #4b5154 !important;
+}
+
+.last-formItem {
+    margin-bottom: 0;
+}
